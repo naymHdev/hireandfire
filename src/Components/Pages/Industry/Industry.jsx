@@ -1,3 +1,5 @@
+import { SendHorizontal } from "lucide-react";
+import { jobRoles } from "../../../data/data";
 import PrimaryButton from "../../PrimaryButton/PrimaryButton";
 
 const Industry = () => {
@@ -49,6 +51,46 @@ const Industry = () => {
           </p>
           <div className=" mt-8">
             <PrimaryButton text="Contact Us" />
+          </div>
+        </div>
+      </section>
+
+      {/* Job Roles Section */}
+      <section className="mt-28 max-w-7xl mx-auto px-4 md:px-6 lg:px-10 text-black">
+        <div className=" text-center w-9/12 md:w-6/12 mx-auto">
+          <h3 className=" text-xl md:text-3xl font-bold">Roles we Fil</h3>
+          <p className=" text-sm mt-5">
+            We fill roles in construction, matching skilled professionals like
+            engineers, supervisors, and laborers to projects requiring expertise
+            and efficiency.
+          </p>
+        </div>
+
+        <div className=" my-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {jobRoles.map((role, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-md overflow-hidden shadow-lg p-2 flex flex-col justify-between"
+              >
+                <img
+                  className="w-full h-auto object-cover"
+                  src={role.image}
+                  alt={role.title}
+                />
+                <div className="flex-grow text-center mt-3">
+                  <h3 className="font-semibold mb-2">{role.title}</h3>
+                  <p className="text-gray-600 mb-4 text-sm">
+                    {role.description}
+                  </p>
+                </div>
+                <div className="flex items-center justify-center mt-auto pb-3">
+                  <button className="text-red-500 font-medium flex gap-1 items-center">
+                    Contact Us <SendHorizontal className="w-3 mx-auto h-auto" />
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
