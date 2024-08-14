@@ -183,24 +183,38 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-blue-800 py-4">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <div className="bg-blue-800 py-4 mx-auto max-w-7xl px-4 md:px-6 lg:px-10">
+        <div className="mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-center md:text-left">
             © Copyright 2024 Hire & Fire All Rights Reserved.
           </p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#facebook" aria-label="Facebook">
-              <Facebook className="w-5 h-5" />
-            </a>
-            <a href="#twitter" aria-label="Twitter">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#instagram" aria-label="Instagram">
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a href="#youtube" aria-label="YouTube">
-              <Youtube className="w-5 h-5" />
-            </a>
+          <div className=" text-sm flex items-center gap-8">
+            <p>Privacy Policy</p> <p>Terms & Conditions</p> <p>Cookie Policy</p>
+          </div>
+          <div className="flex items-center space-x-4 mt-4 md:mt-0 text-sm">
+            <p>Follow Us</p>
+            <div className=" space-x-4 flex items-center">
+              <div className=" bg-white rounded-full p-1">
+                <a href="#facebook" aria-label="Facebook">
+                  <Facebook className="w-4 h-4 text-red-600" />
+                </a>
+              </div>
+              <div className=" bg-white rounded-full p-1">
+                <a href="#twitter" aria-label="Twitter">
+                  <Twitter className="w-4 h-4 text-red-600" />
+                </a>
+              </div>
+              <div className=" bg-white rounded-full p-1">
+                <a href="#instagram" aria-label="Instagram">
+                  <Instagram className="w-4 h-4 text-red-600" />
+                </a>
+              </div>
+              <div className=" bg-white rounded-full p-1">
+                <a href="#youtube" aria-label="YouTube">
+                  <Youtube className="w-4 h-4 text-red-600" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
