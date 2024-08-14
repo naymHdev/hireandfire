@@ -1,5 +1,5 @@
 import { SendHorizontal } from "lucide-react";
-import { jobRoles } from "../../../data/data";
+import { benefits, jobRoles } from "../../../data/data";
 import PrimaryButton from "../../PrimaryButton/PrimaryButton";
 
 const Industry = () => {
@@ -66,7 +66,7 @@ const Industry = () => {
           </p>
         </div>
 
-        <div className=" my-12">
+        <div className=" mt-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {jobRoles.map((role, index) => (
               <div
@@ -88,6 +88,42 @@ const Industry = () => {
                   <button className="text-red-500 font-medium flex gap-1 items-center">
                     Contact Us <SendHorizontal className="w-3 mx-auto h-auto" />
                   </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BenefitsSection */}
+      <section className="mt-28 bg-white max-w-7xl mx-auto px-4 md:px-6 lg:px-10">
+        <div className="">
+          <div className=" text-center w-9/12 md:w-6/12 mx-auto">
+            <h3 className=" text-xl md:text-3xl font-bold">
+              Benefits of Hiring Through Us
+            </h3>
+            <p className=" text-sm mt-5">
+              Benefit from our efficient hiring process, matching qualified
+              candidates to your construction projects, ensuring quality and
+              reliability.
+            </p>
+          </div>
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-5">
+            {benefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg text-center flex flex-col items-center p-2 border-b-8 border-red-500"
+              >
+                <div className=" -mt-12">
+                  <div className=" border border-dotted rounded-full p-1 border-red-500">
+                    <div className="bg-red-600 rounded-full p-4">
+                      <img className=" w-8" src={benefit?.icon} alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div className=" mt-5">
+                  <h3 className="font-semibold mb-2">{benefit.title}</h3>
+                  <p className="text-gray-600">{benefit.description}</p>
                 </div>
               </div>
             ))}
