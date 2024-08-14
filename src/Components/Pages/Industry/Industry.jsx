@@ -1,4 +1,3 @@
-import { SendHorizontal } from "lucide-react";
 import { benefits, jobRoles } from "../../../data/data";
 import PrimaryButton from "../../PrimaryButton/PrimaryButton";
 import ContactForm from "./ContactForm";
@@ -29,11 +28,7 @@ const Industry = () => {
       <section className="mt-20 max-w-7xl gap-14 text-black md:flex items-center justify-between px-4 md:px-6 lg:px-10">
         <div className=" flex-1 md:order-last">
           <div className=" flex-col justify-end items-center">
-            <img
-              className=" w-full h-auto"
-              src="/public/Images/Image 1.svg"
-              alt=""
-            />
+            <img className=" w-full h-auto" src="/Images/Image 1.svg" alt="" />
           </div>
         </div>
         <div className=" flex-1 mt-6 md:mt-0">
