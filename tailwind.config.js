@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         industryHBg: "url('/public/Images/Background image 1.svg')",
+        contactForm: "url('/public/Images/Background image 2.svg')",
       },
     },
   },

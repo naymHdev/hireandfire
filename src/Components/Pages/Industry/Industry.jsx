@@ -1,6 +1,7 @@
 import { SendHorizontal } from "lucide-react";
 import { benefits, jobRoles } from "../../../data/data";
 import PrimaryButton from "../../PrimaryButton/PrimaryButton";
+import ContactForm from "./ContactForm";
 
 const Industry = () => {
   return (
@@ -129,6 +130,11 @@ const Industry = () => {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Contact form */}
+      <section className="mt-28 bg-white max-w-7xl mx-auto px-4 md:px-6 lg:px-10">
+        <ContactForm />
       </section>
     </>
   );
