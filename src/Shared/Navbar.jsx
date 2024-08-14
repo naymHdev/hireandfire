@@ -9,15 +9,14 @@ const Navbar = () => {
     <nav className="bg-white relative">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <div>
             <NavLink
               to="/"
               className="flex items-center py-5 px-2 text-gray-700"
             >
               <img
-                className=" absolute w-16 h-auto"
-                src="/public/Icons/Logo.svg"
+                className=" absolute w-11 md:w-16 h-auto"
+                src="/Icons/Logo.svg"
                 alt=""
               />
             </NavLink>
@@ -47,7 +46,10 @@ const Navbar = () => {
                   : ""
               }
             >
-              Employers
+              <div className=" flex items-center">
+                <p>Employers</p>
+                <img src="/Icons/Icon 1.svg" alt="" />
+              </div>
             </NavLink>
             <NavLink
               to="/find-worker"
@@ -59,7 +61,10 @@ const Navbar = () => {
                   : ""
               }
             >
-              Find Worker
+              <div className=" flex items-center">
+                <p>Find Worker</p>
+                <img src="/Icons/Icon 1.svg" alt="" />
+              </div>
             </NavLink>
             <NavLink
               to="/industry"
@@ -83,7 +88,10 @@ const Navbar = () => {
                   : ""
               }
             >
-              Resources
+              <div className=" flex items-center">
+                <p>Resources</p>
+                <img src="/Icons/Icon 1.svg" alt="" />
+              </div>
             </NavLink>
             <NavLink
               to="#contact"
@@ -91,12 +99,13 @@ const Navbar = () => {
             >
               Contact Us
             </NavLink>
-            <button>
+            <button className=" flex items-center">
               <img
-                src="/public/Icons/Country Icon.svg"
+                src="/Icons/Country Icon.svg"
                 alt="flag"
                 className="w-6 h-6"
               />
+              <img src="/Icons/Icon 1.svg" alt="" />
             </button>
           </div>
 
@@ -157,7 +166,7 @@ const Navbar = () => {
           </NavLink>
           <button className="block py-2 px-4 text-sm">
             <img
-              src="/path/to/flag-icon.png"
+              src="/Icons/Country Icon.svg"
               alt="flag"
               className="w-6 h-6 mx-auto"
             />

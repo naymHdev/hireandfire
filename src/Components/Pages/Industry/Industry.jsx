@@ -86,9 +86,10 @@ const Industry = () => {
                   </p>
                 </div>
                 <div className="flex items-center justify-center mt-auto pb-3">
-                  <button className="text-red-500 font-medium flex gap-1 items-center">
-                    Contact Us <SendHorizontal className="w-3 mx-auto h-auto" />
+                  <button className="text-red-500 font-medium">
+                    Contact Us
                   </button>
+                  <img src="/public/Icons/Icon 3.svg" alt="" />
                 </div>
               </div>
             ))}

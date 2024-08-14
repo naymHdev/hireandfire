@@ -4,7 +4,7 @@ import PrimaryButton from "../../PrimaryButton/PrimaryButton";
 const ContactForm = () => {
   return (
     <>
-      <div className=" w-8/12 mx-auto grid grid-cols-1 md:grid-cols-8 shadow-lg rounded">
+      <div className="md:w-8/12 mx-auto grid grid-cols-1 md:grid-cols-8 shadow-lg rounded">
         <div className="col-span-3 bg-contactForm text-white px-8 py-10">
           <h4 className=" text-2xl font-semibold">Contact Us</h4>
           <p className=" text-sm font-medium my-2">
@@ -53,36 +53,38 @@ const ContactForm = () => {
           </section>
         </div>
         <div className=" col-span-5">
-          <div className=" space-y-6 w-10/12 mx-auto mt-6">
-            <input
-              className=" rounded-lg border w-full px-3 py-2 border-black focus:outline-none"
-              type="text"
-              placeholder="First name"
-            />
-            <input
-              className=" rounded-lg border w-full px-3 py-2 border-black focus:outline-none"
-              type="email"
-              name=""
-              id=""
-              placeholder="Email"
-            />
-            <input
-              className=" rounded-lg border w-full px-3 py-2 border-black focus:outline-none"
-              type="number"
-              name=""
-              id=""
-              placeholder="Phone Number"
-            />
-            <textarea
-              className=" rounded-lg border w-full px-3 py-2 border-black focus:outline-none"
-              name=""
-              id=""
-              placeholder="Write Your massage"
-            ></textarea>
-            <div className=" flex items-center justify-center">
-              <PrimaryButton text="Send Message" />
+          <form>
+            <div className=" space-y-6 w-10/12 mx-auto mt-6">
+              <input
+                className=" rounded-lg border w-full px-3 py-2 border-black focus:outline-none"
+                type="text"
+                placeholder="First name"
+              />
+              <input
+                className=" rounded-lg border w-full px-3 py-2 border-black focus:outline-none"
+                type="email"
+                name=""
+                id=""
+                placeholder="Email"
+              />
+              <input
+                className=" rounded-lg border w-full px-3 py-2 border-black focus:outline-none"
+                type="number"
+                name=""
+                id=""
+                placeholder="Phone Number"
+              />
+              <textarea
+                className=" rounded-lg border w-full px-3 py-2 border-black focus:outline-none"
+                name=""
+                id=""
+                placeholder="Write Your massage"
+              ></textarea>
+              <div className=" flex items-center justify-center pb-5 md:pb-0">
+                <PrimaryButton type="submit" text="Send Message" />
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </>
