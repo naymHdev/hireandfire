@@ -28,7 +28,7 @@ const OurSuccess = () => {
             </div>
           </div>
           <div className=" col-span-full md:col-span-2 mt-5 md:mt-0">
-            <img src="/public/Images/World-map2-a.webp" alt="" />
+            <img src="/Images/World-map2-a.webp" alt="" />
           </div>
         </div>
       </div>
