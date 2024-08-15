@@ -1,5 +1,6 @@
 import Banner from "./Banner";
 import HowItWorks from "./HowItWorks";
+import OurSuccess from "./OurSuccess";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
             allowfullscreen
           ></iframe>
         </div>
+        <OurSuccess />
       </div>
     </>
   );
