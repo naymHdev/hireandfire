@@ -18,8 +18,25 @@ const Banner = () => {
             </button>
           </div>
         </div>
-
         <div className="bg-homeBannerBgs w-full bg-cover bg-center bg-no-repeat h-screen"></div>
+      </div>
+      <div className=" flex items-center w-6/12 pl-6 pt-4 bg-white -mt-20 absolute">
+        <div className=" border-r border-black px-1">
+          <h3 className=" text-3xl font-semibold text-[#033C78]">
+            Workers Agency
+          </h3>{" "}
+          <p className=" font-medium mt-1">
+            Connecting skilled workers from across the globe.
+          </p>
+        </div>
+        <div className="px-16">
+          <h3 className=" text-3xl font-semibold text-[#033C78]">
+            Get Your Dream Job
+          </h3>{" "}
+          <p className=" font-medium mt-1">
+            Get your dream job in your dream country
+          </p>
+        </div>
       </div>
     </>
   );
