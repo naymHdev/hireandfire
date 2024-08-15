@@ -6,8 +6,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white relative">
-      <div className="container mx-auto px-4">
+    <nav className="bg-white relative py-2">
+      <div className=" mx-auto px-4 md:px-6 lg:px-10 max-w-7xl">
         <div className="flex justify-between items-center">
           <div>
             <NavLink

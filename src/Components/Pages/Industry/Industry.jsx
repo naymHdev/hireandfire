@@ -25,7 +25,7 @@ const Industry = () => {
       </div>
 
       {/* Contact us section */}
-      <section className="mt-20 max-w-7xl gap-14 text-black md:flex items-center justify-between px-4 md:px-6 lg:px-10">
+      <section className="mt-20 max-w-7xl mx-auto gap-14 text-black md:flex items-center justify-between px-4 md:px-6 lg:px-10">
         <div className=" flex-1 md:order-last">
           <div className=" flex-col justify-end items-center">
             <img className=" w-full h-auto" src="/Images/Image 1.svg" alt="" />
@@ -67,7 +67,11 @@ const Industry = () => {
             {jobRoles.map((role, index) => (
               <div
                 key={index}
-                className="bg-white rounded-md overflow-hidden shadow-lg p-2 flex flex-col justify-between"
+                className={`bg-white rounded-md overflow-hidden shadow-lg p-2 flex flex-col justify-between ${
+                  index >= jobRoles.length - 2
+                    ? "sm:col-span-2 lg:col-span-2 mx-auto"
+                    : ""
+                }`}
               >
                 <img
                   className="w-full h-auto object-cover"
