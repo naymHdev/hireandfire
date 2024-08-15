@@ -6,26 +6,25 @@ const OurSuccess = () => {
         <p className="text-xl font-medium text-red-600 mb-8">
           We believe that great companies are built by great people
         </p>
-        <div className=" grid grid-cols-1 md:grid-cols-5">
-          <div className="bg-gray-100 p-8 rounded-lg shadow-md flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:col-span-3">
-            <div className="text-center md:text-left">
-              <h3 className="text-3xl font-bold text-gray-900">25,000+</h3>
-              <p className="text-gray-700">Workers Placed</p>
-            </div>
-            <div className="border-l-2 border-gray-300 h-12 hidden md:block"></div>
-            <div className="text-center md:text-left">
-              <h3 className="text-3xl font-bold text-gray-900">20+</h3>
-              <p className="text-gray-700">Globe Across</p>
-            </div>
-            <div className="border-l-2 border-gray-300 h-12 hidden md:block"></div>
-            <div className="text-center md:text-left">
-              <h3 className="text-3xl font-bold text-gray-900">300+</h3>
-              <p className="text-gray-700">Trusted Partner</p>
-            </div>
-            <div className="border-l-2 border-gray-300 h-12 hidden md:block"></div>
-            <div className="text-center md:text-left">
-              <h3 className="text-3xl font-bold text-gray-900">15</h3>
-              <p className="text-gray-700">Year Experienced</p>
+        <div className=" grid grid-cols-1 md:grid-cols-5 items-center justify-center">
+          <div className=" col-span-full md:col-span-3">
+            <div className=" text-center md:text-start grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 shadow-lg py-8 px-5">
+              <div className="md:border-r border-dashed h-20 border-blue-800">
+                <h2 className=" text-3xl font-bold text-[#033C78]">25,000 +</h2>{" "}
+                <p className=" text-[#95AEC7] mt-1">Workers Placed</p>
+              </div>
+              <div className="md:border-r border-dashed h-20 border-blue-800">
+                <h2 className=" text-3xl font-bold text-[#033C78]">20 +</h2>{" "}
+                <p className=" text-[#95AEC7] mt-1">Globe Across</p>
+              </div>
+              <div className="md:border-r border-dashed h-20 border-blue-800">
+                <h2 className=" text-3xl font-bold text-[#033C78]">300 +</h2>{" "}
+                <p className=" text-[#95AEC7] mt-1">Trusted Partner</p>
+              </div>
+              <div>
+                <h2 className=" text-3xl font-bold text-[#033C78]">15</h2>
+                <p className=" text-[#95AEC7] mt-1">Year Experienced</p>
+              </div>
             </div>
           </div>
           <div className=" col-span-full md:col-span-2 mt-5 md:mt-0">
