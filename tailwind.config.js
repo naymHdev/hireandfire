@@ -4,8 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        industryHBg: "url('/public/Images/Background image 1.svg')",
-        contactForm: "url('/public/Images/Background image 2.svg')",
+        industryHBg: "url('/Images/Background image 1.svg')",
+        contactForm: "url('/Images/Background image 2.svg')",
+        homeBannerBg: "url('/Images/connecting-employees.jpg')",
+        homeBannerBgs: "url('/Images/cheerful-recruiter-shaking-hands.jpg')",
       },
     },
   },
