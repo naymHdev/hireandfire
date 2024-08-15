@@ -16,7 +16,7 @@ const Footer = () => {
         <div>
           <div>
             <img
-              className=" absolute w-11 md:w-16 h-auto left-16"
+              className=" absolute md:w-16 h-auto md:left-16"
               src="/Icons/Logo.svg"
               alt=""
             />
@@ -184,11 +184,11 @@ const Footer = () => {
       </div>
 
       <div className="bg-blue-800 py-4 mx-auto max-w-7xl px-4 md:px-6 lg:px-10">
-        <div className="mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm text-center md:text-left">
+        <div className="mx-auto px-4 md:flex flex-col md:flex-row items-center justify-between">
+          <p className="text-sm text-left">
             © Copyright 2024 Hire & Fire All Rights Reserved.
           </p>
-          <div className=" text-sm flex items-center gap-8">
+          <div className=" text-sm space-y-2 md:space-y-0 md:flex items-center gap-8 mt-3 md:mt-0">
             <p>Privacy Policy</p> <p>Terms & Conditions</p> <p>Cookie Policy</p>
           </div>
           <div className="flex items-center space-x-4 mt-4 md:mt-0 text-sm">
