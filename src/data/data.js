@@ -63,3 +63,22 @@ export const benefits = [
       "We customize our recruitment process to match the specific requirements of your projects, ensuring a perfect fit for every role.",
   },
 ];
+
+export const steps = [
+  {
+    title: "Tell Us Your Need",
+    description: "Share Your Specific Requirements and Job Descriptions",
+  },
+  {
+    title: "View Matched Candidates",
+    description: "Review Profiles of Candidates That Match Your Needs",
+  },
+  {
+    title: "Interview Selected Candidates",
+    description: "Conduct Interviews With Shortlisted Candidates",
+  },
+  {
+    title: "Select and We Complete Visa Procedures",
+    description: "Choose Your Candidates, and We Handle the Rest",
+  },
+];
